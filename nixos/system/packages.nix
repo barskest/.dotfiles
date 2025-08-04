@@ -3,7 +3,8 @@
 {
   environment.systemPackages = with pkgs; [
     helix
-    rust
+    rustc
+    cargo
     alacritty
     foot
     git
