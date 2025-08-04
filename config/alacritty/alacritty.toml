@@ -1,0 +1,7 @@
+[window]
+opacity =  0.95
+decorations = "full"
+
+[window.padding]
+x = 0
+y = 0

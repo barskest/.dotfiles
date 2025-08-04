@@ -1,0 +1,23 @@
+# Theme
+theme = "my_theme"
+
+# Keybindings 
+[keys.normal]
+"A-i" = "move_line_up"
+"A-k" = "move_line_down"
+"A-j" = "move_char_left"
+"A-l" = "move_char_right"
+
+[keys.select]
+"C-c" = "normal_mode"
+"A-i" = "extend_line_up"
+"A-k" = "extend_line_down"
+"A-j" = "extend_char_left"
+"A-l" = "extend_char_right"
+
+[keys.insert]
+"C-c" = "normal_mode"
+"A-i" = "move_line_up"
+"A-k" = "move_line_down"
+"A-j" = "move_char_left"
+"A-l" = "move_char_right"
