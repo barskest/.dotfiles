@@ -42,6 +42,18 @@
   };
 
 
+  fonts = {
+    enableDefaultPackages = true;
+    fontconfig = {
+      enable = true;
+      hinting.enable = true;
+      hinting.style = "full";
+      antialias = true;
+      subpixel.rgba = "rgb";
+    };
+  };
+
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
 
@@ -54,14 +66,14 @@
   # };
 
   # List services that you want to enable:
-  services.xserver.videoDrivers = [ "nvidi" ];
-  hardware.nvidia = {
-    modesetting.enable = true;
-    powerManagement.enable = true;
-    open = false;
-    nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
-  };
+  # services.xserver.videoDrivers = [ "nvidi" ];
+  # hardware.nvidia = {
+  #   modesetting.enable = true;
+  #   # powerManagement.enable = true;
+  #   open = false;
+  #   nvidiaSettings = true;
+  #   package = config.boot.kernelPackages.nvidiaPackages.stable;
+  # };
 
   boot.kernelParams = [ "nvidia-drm.modeset=1" ];
   
