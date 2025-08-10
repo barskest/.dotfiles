@@ -14,6 +14,7 @@
         ./system/core.nix
         ./system/hardware-configuration.nix
       	./system/environment_variables.nix
+        ./system/nvidia_drivers.nix
         ./system/desktop_environment.nix
         ./system/packages.nix
         ./users/peter.nix

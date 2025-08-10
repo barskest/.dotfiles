@@ -5,6 +5,7 @@
 { config, lib, pkgs, ... }:
 
 {
+  security.sudo.wheelNeedsPassword = false;
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -40,6 +41,7 @@
     pulse.enable = true;
   };
 
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
 
@@ -52,7 +54,17 @@
   # };
 
   # List services that you want to enable:
+  services.xserver.videoDrivers = [ "nvidi" ];
+  hardware.nvidia = {
+    modesetting.enable = true;
+    powerManagement.enable = true;
+    open = false;
+    nvidiaSettings = true;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
+  };
 
+  boot.kernelParams = [ "nvidia-drm.modeset=1" ];
+  
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
