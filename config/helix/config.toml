@@ -21,3 +21,5 @@ theme = "my_theme"
 "A-k" = "move_line_down"
 "A-j" = "move_char_left"
 "A-l" = "move_char_right"
+
+
