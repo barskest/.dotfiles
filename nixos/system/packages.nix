@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-
   environment.systemPackages = with pkgs; [
     wpaperd
     helix
@@ -15,6 +14,4 @@
     curl
     yazi
   ];
-
-  
 }
