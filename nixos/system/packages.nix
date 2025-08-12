@@ -1,7 +1,9 @@
 { config, pkgs, ... }:
 
 {
+
   environment.systemPackages = with pkgs; [
+    wpaperd
     helix
     rustup
     gcc
@@ -13,4 +15,6 @@
     curl
     yazi
   ];
+
+  
 }
