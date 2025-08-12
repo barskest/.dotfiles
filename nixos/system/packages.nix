@@ -2,7 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
-    # nvidia-smi
     helix
     rustup
     gcc
