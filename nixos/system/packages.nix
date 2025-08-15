@@ -2,12 +2,11 @@
 
 {
   environment.systemPackages = with pkgs; [
-    wpaperd
+    btop
     helix
     rustup
     gcc
     alacritty
-    foot
     git
     brave
     tree

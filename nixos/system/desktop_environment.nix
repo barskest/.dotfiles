@@ -19,4 +19,11 @@
     xdg-desktop-portal-gtk
   ];
   xdg.portal.config.common.default = [ "gtk" ];
+
+  # envi
+  environment.systemPackages = with pkgs; [
+    ironbar
+    wpaperd
+  ];
+
 }

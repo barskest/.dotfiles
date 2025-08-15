@@ -1,0 +1,19 @@
+* {
+  /* font-family: "Hack Nerd Font", monospace; */
+}
+
+#bar, .background {
+  background-color: rgba( 0, 0, 0, 0 );
+  font-family: arial;
+}
+
+#bar{
+
+  font-family: comic-sans;
+  background-color: rgba(0, 0, 0, 0); /* black, 50% opacity */
+  font-size: 12px;
+}
+
+.background {
+  background-color: rgba( 0, 0, 0, 0 );  
+}

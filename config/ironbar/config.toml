@@ -1,0 +1,12 @@
+position = "top"
+height = 42
+
+margin.top = 5
+margin.left = 16
+margin.right = 16
+
+[[end]]
+type = "volume"
+format = "{icon} {percentage}%"
+# icon_size = 32
+

@@ -16,6 +16,7 @@
       	./system/environment_variables.nix
         ./system/desktop_environment.nix
         ./system/packages.nix
+        ./system/fonts.nix
         ./users/peter.nix
         ./system/nvidia.nix
       ];
