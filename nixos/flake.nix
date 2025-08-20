@@ -10,9 +10,9 @@
       laptop = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          # ./hosts/laptop/configuration.nix
+          ./hosts/laptop/configuration.nix
           ./system/core.nix
-          ./system/hardware-configuration.nix
+          # ./system/hardware-configuration.nix
           ./system/environment_variables.nix
           ./system/desktop_environment.nix
           ./system/packages.nix
@@ -26,7 +26,7 @@
       # desktop = nixpkgs.lib.nixosSystem {
       #   system = "x86_64-linux";
       #   modules = [
-      #     ./system/core.nix
+      # 
       #     ./system/hardware-configuration-desktop.nix
       #     ./users/peter.nix
       #     ./system/nvidia.nix
