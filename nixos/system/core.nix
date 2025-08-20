@@ -41,19 +41,6 @@
     pulse.enable = true;
   };
 
-
-  # fonts = {
-  #   enableDefaultPackages = true;
-  #   fontconfig = {
-  #     enable = true;
-  #     hinting.enable = true;
-  #     hinting.style = "full";
-  #     antialias = true;
-  #     subpixel.rgba = "rgb";
-  #   };
-  # };
-
-
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
 
