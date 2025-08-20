@@ -10,7 +10,7 @@
       laptop = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./hosts/laptop/configuration.nix
+          # ./hosts/laptop/configuration.nix
           ./system/core.nix
           ./system/hardware-configuration.nix
           ./system/environment_variables.nix
