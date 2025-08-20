@@ -18,7 +18,7 @@
           ./system/packages.nix
           ./system/fonts.nix
           ./users/peter.nix
-          ./system/nvidia.nix
+          # ./system/nvidia.nix
         ];
       };
 
