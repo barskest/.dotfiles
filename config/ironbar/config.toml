@@ -1,12 +1,39 @@
 position = "top"
-height = 42
+height = 32
 
 margin.top = 5
 margin.left = 16
 margin.right = 16
 
-[[end]]
-type = "volume"
-format = "{icon} {percentage}%"
-# icon_size = 32
+# [[start]]
+# type = "clock"
 
+# [[center]]
+
+[[end]]
+type = "network_manager"
+icon_size = 32
+
+[[end]]
+type = "clock"
+format = "%H:%M"
+
+# Power button
+[[end]]
+type = "custom"
+# class = "power-button"
+
+  # A single button on the bar
+  [[end.bar]]
+  type = "button"
+  label = ""                 # needs a Nerd Font
+  on_click = "popup:toggle"       # note the leading "!" for shell commands
+  # tooltip = "Power menu"
+
+  [[end.popup]]
+  type = "box"
+
+  [[end.popup.widgets]]
+  type = "button"
+  label = "shutdown"
+  on_click = "!shutdown now"

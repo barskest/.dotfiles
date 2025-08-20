@@ -22,7 +22,9 @@
 
   # envi
   environment.systemPackages = with pkgs; [
-    ironbar
+    ( ironbar.override {
+      features = [ "network_manager" "workspaces" ]; 
+    })
     wpaperd
   ];
 
