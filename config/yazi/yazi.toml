@@ -2,3 +2,14 @@
 show_hidden = true
 ratio = [ 1, 1, 4 ]
 
+# [opener]
+# bash = [
+#   { run = "bash \"$1\"", desc = "Run with bash", for = "unix" },
+# ]
+
+# [open]
+# rules = [
+#   { name = "*.sh", use = "bash" },
+#   { mime = "text/*", use = "text" },
+#   { name = "*", use = "text" },
+# ]

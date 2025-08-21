@@ -10,6 +10,5 @@
     ./fonts.nix
     ./audio.nix
     ./boot.nix
-    # ./core.nix
   ];
 }

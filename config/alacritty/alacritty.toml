@@ -1,8 +1,8 @@
 [window]
 opacity =  0.9
-decorations = "full"
+# decorations = "full"
 
 [window.padding]
-x = 15
-y = 15
+x = 40
+y = 40
 

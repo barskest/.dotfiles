@@ -1,12 +1,14 @@
-/* * { */
-  /* font-family: "Hack Nerd Font", monospace; */
-/* } */
-
-#bar, .background {
-  background-color: rgba( 0, 0, 0, 0 );
+.background {
+  background: transparent;
 }
 
-/* Clock */ 
-/* .popup-clock { */
-  /* background-color: rgba( 0, 0, 0, 0 ); */
-/* } */
+.container {
+  margin: 5px;
+  /* background: #1f1f2f; */
+}
+
+.widget, .button  {
+  margin: 0 5px;
+  /* background: #1f1f2f; */
+  /* color: #d6dbf2; */
+}
