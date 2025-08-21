@@ -4,5 +4,5 @@
   services.pipewire = {
     pulse.enable = true;
     enable = true;
-  }
+  };
 }
