@@ -4,6 +4,7 @@
     ./desktop_environment.nix
     ./desktop_environment.nix
     ./packages.nix
+    ./fonts.nix
     ./core.nix
   ];
 }

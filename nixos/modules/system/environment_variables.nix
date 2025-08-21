@@ -2,8 +2,8 @@
 
 {
 	environment.variables = {
+		INPUTRC = "/home/peter/.config/bash/.inputrc";
 		EDITOR = "hx";
 		VISUAL = "hx";
-		INPUTRC = "/home/peter/.config/bash/.inputrc";
 	};
 }
