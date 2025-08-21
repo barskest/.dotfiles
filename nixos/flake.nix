@@ -11,14 +11,7 @@
         system = "x86_64-linux";
         modules = [
           ./hosts/laptop/configuration.nix
-          # ./system/core.nix
-          # ./system/hardware-configuration.nix
-          # ./system/environment_variables.nix
-          # ./system/desktop_environment.nix
-          # ./system/packages.nix
-          # ./system/fonts.nix
           ./users/peter.nix
-          # ./system/nvidia.nix
         ];
       };
 
@@ -26,10 +19,6 @@
       # desktop = nixpkgs.lib.nixosSystem {
       #   system = "x86_64-linux";
       #   modules = [
-      # 
-      #     ./system/hardware-configuration-desktop.nix
-      #     ./users/peter.nix
-      #     ./system/nvidia.nix
       #   ];
       # };
     };

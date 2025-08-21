@@ -1,11 +1,10 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    (builtins.attrValues (import ../modules))
-    ++ [
+  imports = [
       ./hardware-configuration.nix
       ./nixos_version.nix
       ./host_name.nix
+      ../../modules
     ];
 }
