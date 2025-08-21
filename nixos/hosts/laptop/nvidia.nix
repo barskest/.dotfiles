@@ -6,7 +6,7 @@
   
   services.xserver.enable = true;
   services.xserver.videoDrivers = [ "nvidia" ]; # Will still handle Intel via modesetting
-  hardware.opengl.enable = true;
+  hardware.graphics.enable = true;
 
   # NVIDIA-specific
   hardware.nvidia = {
@@ -24,7 +24,7 @@
   };
 
   # Optional: Vulkan
-  hardware.opengl.extraPackages = with pkgs; [
+  hardware.graphics.extraPackages = with pkgs; [
     vulkan-loader
     vulkan-tools
     vulkan-validation-layers
