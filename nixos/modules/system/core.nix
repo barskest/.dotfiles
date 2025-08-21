@@ -5,7 +5,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  security.sudo.wheelNeedsPassword = false;
+  # security.sudo.wheelNeedsPassword = false;
   # Use the systemd-boot EFI boot loader.
   # boot.loader.systemd-boot.enable = true;
   # boot.loader.efi.canTouchEfiVariables = true;
@@ -24,11 +24,11 @@
 
   # Select internationalisation properties.
   # i18n.defaultLocale = "en_US.UTF-8";
-  console = {
-  #   font = "Lat2-Terminus16";
-    keyMap = "no";
-  #   useXkbConfig = true; # use xkb.options in tty.
-  };
+  # console = {
+  # #   font = "Lat2-Terminus16";
+  #   keyMap = "no";
+  # #   useXkbConfig = true; # use xkb.options in tty.
+  # };
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;
@@ -62,7 +62,7 @@
   #   package = config.boot.kernelPackages.nvidiaPackages.stable;
   # };
 
-  boot.kernelParams = [ "nvidia-drm.modeset=1" ];
+  # boot.kernelParams = [ "nvidia-drm.modeset=1" ];
   
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
@@ -97,6 +97,6 @@
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
   # system.stateVersion = "25.05"; # Did you read the comment?
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  # nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
 
