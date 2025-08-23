@@ -1,7 +1,13 @@
-{ config, pkgs, ... }:
+{ config, pkgs, pkgs-unstable, ... }:
 
-{
+
+let
+  unstable = import pkgs-unstable {
+    system = pkgs.system;
+  };
+in {
   environment.systemPackages = with pkgs; [
+  # Stable
     btop
     helix
     rustup
@@ -12,7 +18,9 @@
     tree
     curl
     yazi
-    blender
+  # Unstable 
+      # blend
+  ] ++ [
+    unstable.blender
   ];
-
 }
