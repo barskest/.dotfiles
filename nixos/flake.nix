@@ -9,9 +9,7 @@
     nixosConfigurations = {
       laptop = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        modules = [
-          ./hosts/laptop/configuration.nix
-        ];
+        modules = [ ./hosts/laptop/configuration.nix ];
       };
 
       # later you can add:

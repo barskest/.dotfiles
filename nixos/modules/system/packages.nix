@@ -12,6 +12,7 @@
     tree
     curl
     yazi
+    blender
   ];
 
 }
