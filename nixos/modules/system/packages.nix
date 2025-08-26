@@ -10,8 +10,7 @@ in {
   # Stable
     btop
     helix
-    rustup
-    gcc
+    # gcc
     alacritty
     git
     brave
@@ -22,5 +21,7 @@ in {
       # blend
   ] ++ [
     unstable.blender
+    unstable.rustup
+    unstable.cargo
   ];
 }

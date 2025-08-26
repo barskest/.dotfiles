@@ -34,19 +34,22 @@
   #   WLR_NO_HARDWARE_CURSORS = "1";
   #   __GLX_VENDOR_LIBRARY_NAME = "nvidia";
   # };
+  #
 
-  hardware.nvidia = {
-    modesetting.enable = true;
-    powerManagement.enable = true;
-    open = false;
-    nvidiaSettings = false;
-  }
+  # hardware.graphics.enable = true; # Enable opengl
+
+  # hardware.nvidia = {
+  #   modesetting.enable = true;
+  #   powerManagement.enable = true;
+  #   open = false;
+  #   nvidiaSettings = false;
+  # }
   
-  services.displayManager.videoDrivers = [ "nvidia" ];
+  # services.displayManager.videoDrivers = [ "nvidia" ];
 
-  environment.sessionVariables = {
-    LIBVA_DRIVER_NAME = "nvidia";
-    _:GLX_VENDOR_LIBRARY_NAME = "nvidia";
-  };
+  # environment.sessionVariables = {
+  #   LIBVA_DRIVER_NAME = "nvidia";
+  #   _:GLX_VENDOR_LIBRARY_NAME = "nvidia";
+  # };
 }
 
