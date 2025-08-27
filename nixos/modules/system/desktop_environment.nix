@@ -1,14 +1,13 @@
 { config, pkgs, ... }:
-
 {
   # Enable niri compositor
   programs.niri.enable = true;
 
   # Display manager (SDDM)
   services.displayManager = {
+    sddm.wayland.enable = true;
     defaultSession = "niri";
     sddm.enable = true;
-    sddm.wayland.enable = true;
   };
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
@@ -19,11 +18,11 @@
     xdg-desktop-portal-gtk
   ];
   xdg.portal.config.common.default = [ "gtk" ];
-
-  # envi
+  
   environment.systemPackages = with pkgs; [
-    ironbar
     wpaperd
+    ironbar
   ];
-
 }
+
+

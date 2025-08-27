@@ -2,7 +2,7 @@
   description = "My modular NixOS config";
 
   inputs = {
-    pkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    # pkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
   };
 
@@ -11,7 +11,7 @@
       laptop = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [ ./hosts/laptop/configuration.nix ];
-        specialArgs = { inherit pkgs-unstable; };
+        # specialArgs = { inherit pkgs-unstable; };
       };
 
       # later you can add:
