@@ -2,4 +2,4 @@
 set -e
 
 echo "Rebuilding NixOS from flake..."
-sudo nixos-rebuild switch --flake .
+sudo nixos-rebuild switch --flake . --impure
