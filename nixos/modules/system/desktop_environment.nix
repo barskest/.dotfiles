@@ -11,7 +11,10 @@
   };
 
   services.udisks2.enable = true;
+  services.udisks2.mountOnMedia = true;
   services.gvfs.enable = true;
+  services.devmon.enable = true;
+  
   
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
