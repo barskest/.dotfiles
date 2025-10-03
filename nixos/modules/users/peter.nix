@@ -3,7 +3,7 @@
 {
   users.users.peter = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel" "storage" "plugdev" "video" ];
   };
 }
 
