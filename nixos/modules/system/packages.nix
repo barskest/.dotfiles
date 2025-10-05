@@ -9,5 +9,6 @@
     tree
     curl
     yazi
+    wl-clipboard
   ];
 }

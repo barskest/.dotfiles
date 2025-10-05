@@ -1,39 +1,29 @@
 position = "top"
 height = 0
 
-# margin.top = 5
-# margin.left = 16
-# margin.right = 16
-
-# [[start]]
-# type = "workspaces"
-
-# [[center]]
+# [[end]]
+# type = "volume"
 
 # [[end]]
-# type = "network_manager"
-# icon_size = 32
+# type = "clock"
+# format = "󰥔  %H:%M"
 
-[[end]]
-type = "volume"
+# [[end]]
+# type = "custom"
 
-[[end]]
-type = "clock"
-format = "󰥔  %H:%M"
+#   [[end.bar]]
+#   type = "button"
+#   label = ""
+#   on_click = "popup:toggle"
+#   tooltip = "Power menu"
 
-[[end]]
-type = "custom"
+#   [[end.popup]]
+#   type = "box"
+#   orientation = "vertical"
+#   widgets = [
+#     { type = "button", label = "Shutdown", on_click = "!shutdown now" },
+#     { type = "button", label = "Restart",  on_click = "!reboot" }
+#   ]
 
-  [[end.bar]]
-  type = "button"
-  label = ""
-  on_click = "popup:toggle"
-  tooltip = "Power menu"
 
-  [[end.popup]]
-  type = "box"
-  orientation = "vertical"
-  widgets = [
-    { type = "button", label = "Shutdown", on_click = "!shutdown now" },
-    { type = "button", label = "Restart",  on_click = "!reboot" }
-  ]
+

@@ -27,7 +27,7 @@
   
   environment.systemPackages = with pkgs; [
     wpaperd
-    ironbar
+    unstable.ironbar
   ];
 }
 
