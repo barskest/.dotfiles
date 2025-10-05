@@ -1,15 +1,25 @@
 position = "top"
 height = 0
 
+
 # [[end]]
 # type = "volume"
-
-# [[end]]
-# type = "clock"
-# format = "󰥔  %H:%M"
-
-# [[end]]
+# [[start]]
+# type = "niri/workspaces"
+#
+# [[start]]
 # type = "custom"
+
+  # [[start.bar]]
+  # type = "button"
+  # label = """
+
+[[end]]
+type = "clock"
+format = "󰥔  %H:%M"
+
+[[end]]
+type = "custom"
 
 #   [[end.bar]]
 #   type = "button"

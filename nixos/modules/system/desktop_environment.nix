@@ -26,9 +26,13 @@
   xdg.portal.config.common.default = [ "gtk" ];
   
   environment.systemPackages = with pkgs; [
+    freerdp
     wpaperd
-    unstable.ironbar
+    # unstable.ironbar
+    # waybar
   ];
+
+  virtualisation.docker.enable = true;
 }
 
 
